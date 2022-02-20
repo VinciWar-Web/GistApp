@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #ebf5ff;
+}
+ 
+.paginationBttns {
+    width: 100%;
+    height: 55px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+  
+.paginationBttns a {
+    background-color: #d6eafc;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    color: #2e2e2e;
+    cursor: pointer;
+}
+  
+.paginationBttns a:hover {
+    color: white;
+    background-color: #5ca5ee;
+}
+  
+.paginationActive a {
+    color: white;
+    background-color: #3a6da0;
+}
+
+
+/*Estilos Spinner*/
+.spinner {
+    border: 8px solid rgba(160, 146, 146, 0.1);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border-left-color: #3a6da0;
+
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.containerSpinner{
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(228, 224, 224, 1);
+    opacity: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
